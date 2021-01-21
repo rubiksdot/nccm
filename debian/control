@@ -1,0 +1,26 @@
+Source: nccm
+Section: net
+Priority: optional
+Maintainer: Andrew <rubiksdot@grue.cc>
+Build-Depends: debhelper (>= 11), python3-argparse-manpage
+Standards-Version: 4.1.3
+Homepage: https://github.com/flyingrhinonz/nccm
+Vcs-Browser: https://github.com/flyingrhinonz/nccm
+Vcs-Git: https://github.com/flyingrhinonz/nccm.git
+
+Package: nccm
+Architecture: all
+Depends: ${misc:Depends}
+Description: Terminal based ssh connection manager
+ This is a terminal based (ncurses) ssh connection manager.
+ .
+ Configuration is done via a yaml file and each connection can be
+ configured with user@host, a comment, an identity file and general
+ ssh options.
+ .
+ The list can be searched directly from the command line and, if more
+ than one match exists, an ncurses interface is presented to select the
+ required host.
+ .
+ The search is done on any configured field and the interface permits
+ ordering based on any of the displayed fields.
